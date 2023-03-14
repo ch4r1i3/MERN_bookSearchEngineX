@@ -4,15 +4,29 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd server && npm start",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "build": "cd client && npm run build"
+    "seed": "cd server && npm run seed",
+    "heroku-postbuild": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ch4r1i3/MERN_bookSearchEngineX.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Carlos Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ch4r1i3/MERN_bookSearchEngineX.git"
+  },
+  "homepage": "https://github.com/ch4r1i3/MERN_bookSearchEngineX#readme",
+  "dependencies": {
+    "if-env": "^1.0.4"
+  },
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.2.0"
   }
 }
