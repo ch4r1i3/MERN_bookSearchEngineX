@@ -29,12 +29,15 @@ Google Book Search is a web application that allows users to search for books us
 <img width="1440" alt="Screenshot 2023-03-13 at 9 05 23 PM" src="https://user-images.githubusercontent.com/111701536/225188247-1085cc2a-3528-4f69-afbc-207317cf00e3.png">
 
 
-# Installation & Database SetUp
+# Installation
 * To use this app npm init has to be called to create your package.json file.
 * The following necessary Npm dependencies must be installed to run the application properly: the needed dependencies will be found on the package.json file.
 * To properly install the database you must create at cluster on Mongodb atlas.
 * Run "npm start" for the port to start listening with mongoose.
 * This app is deployed on Heroku
+
+# Deployment
+https://booksearchengine01.herokuapp.com
 
 # License
 ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
