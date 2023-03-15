@@ -25,6 +25,8 @@ Google Book Search is a web application that allows users to search for books us
 * Heroku
 
 # Preview
+<img width="1440" alt="Screenshot 2023-03-13 at 9 04 51 PM" src="https://user-images.githubusercontent.com/111701536/225188229-56e1dc4e-aff1-4db3-84df-3b1681d8f765.png">
+<img width="1440" alt="Screenshot 2023-03-13 at 9 05 23 PM" src="https://user-images.githubusercontent.com/111701536/225188247-1085cc2a-3528-4f69-afbc-207317cf00e3.png">
 
 
 # Installation & Database SetUp
