@@ -4,26 +4,22 @@
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd server && npm start",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
     "heroku-postbuild": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ch4r1i3/MERN_bookSearchEngineX.git"
+    "url": "git@work.github.com:arosenkranz/googlebooks-app.git"
   },
   "keywords": [],
-  "author": "Carlos Martinez",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ch4r1i3/MERN_bookSearchEngineX.git"
-  },
-  "homepage": "https://github.com/ch4r1i3/MERN_bookSearchEngineX#readme",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "@apollo/react-hooks": "^4.0.0",
+    "apollo-server-express": "^2.19.2",
     "if-env": "^1.0.4"
   },
   "devDependencies": {
